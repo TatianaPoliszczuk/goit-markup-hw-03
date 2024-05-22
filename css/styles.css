@@ -122,6 +122,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
+  margin: 0 auto;
 }
 
 .topline-button {
@@ -138,6 +139,7 @@ img {
   height: 56px;
   border: none;
   margin: 20px auto;
+  border-radius: 4px; 
 }
 
 .topline-button:hover,
