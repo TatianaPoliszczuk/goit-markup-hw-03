@@ -7,9 +7,15 @@ body {
 img {
   display: block;
 }
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 /*Header*/
 
-.header-border {
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -21,15 +27,15 @@ img {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-container {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -41,12 +47,17 @@ img {
   margin-right: 76px;
 }
 
-.logo-span {
+.logo-part {
   color: #2e2f42;
 }
 
 .header-list {
   list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-link {
@@ -57,6 +68,7 @@ img {
   color: #2e2f42;
   text-decoration: none;
   padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -64,28 +76,22 @@ img {
   color: #404bbf;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-}
 
-.nav-item-container {
-  display: flex;
-  gap: 40px;
-}
-
-.header-address {
+.address {
   font-style: normal;
+  margin-left: auto;
 }
 
-.header-address,
-.address-container {
+.address-list {
   display: flex;
   gap: 40px;
 }
 
 .contact-list {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-link {
@@ -139,6 +145,7 @@ img {
   height: 56px;
   border: none;
   margin: 20px auto;
+  margin-top: 48px;
   border-radius: 4px; 
 }
 
@@ -168,10 +175,7 @@ img {
 }
 
 .advantages-item {
-  background-color: #f9f9f9;
   width: calc((100% - 72px) / 4);
-  padding: 20px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   border-radius: 8px; 
 }
 
@@ -183,6 +187,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  margin: 0;
 }
 
 .advantage-description {
@@ -190,6 +195,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -240,8 +246,6 @@ img {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  padding: 20px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .team-name {
@@ -301,18 +305,15 @@ img {
 }
 
 .portfolio-item {
-  text-align: center;
+  
   width: calc((100% - 48px) / 3);
-  border-radius: 4px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  text-align: center;
+  
 }
 
 .portfolio-title {
@@ -373,4 +374,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin: 0;
+  padding: 0;
 }
